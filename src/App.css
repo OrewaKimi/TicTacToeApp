@@ -1,0 +1,71 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  font-size: 24px;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.square:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.square:active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dc3545; /* Warna merah untuk tombol reset */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.reset-button:hover {
+  background-color: #c82333; /* Warna lebih gelap saat di-hover */
+}
+
+.reset-button:active {
+  transform: scale(0.95); /* Efek mengecil saat ditekan */
+}
+
+.winner {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #28a745; /* Warna hijau untuk teks pemenang */
+  font-weight: bold;
+}
